@@ -1,6 +1,5 @@
 import { LucideProps } from "@/node_modules/lucide-react/dist/lucide-react";
 import dynamic from "@/node_modules/next/dynamic";
-// import { LucideProps } from "lucide-react";
 import dynamicIconImports from "@/node_modules/lucide-react/dynamicIconImports";
 
 interface IconProps extends LucideProps {
