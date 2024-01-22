@@ -5,8 +5,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Pokemom",
-  description: "Pokemon",
+  title: "Sedekah Bersama",
+  description: "Sedekah Bersama",
 };
 
 export default function RootLayout({

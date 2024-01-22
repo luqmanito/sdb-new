@@ -359,18 +359,6 @@ const Navbar = () => {
             </DialogHeader>
           </DialogContent>
         </Dialog>
-
-        {/* <div
-          onClick={handleDonate}
-          className="right-0 w-36 top-0 hover:bg-sdb_darker cursor-pointer bg-sdb_dark h-full absolute"
-        >
-          <div className="flex mt-5 flex-row gap-4 items-center justify-center">
-            <div>Donate</div>
-            <div>
-              <Icon size={25} name="helping-hand" />
-            </div>
-          </div>
-        </div> */}
       </header>
     </>
   );

@@ -33,6 +33,8 @@ module.exports = {
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
+        bg_grey: "#f2f2f2",
+        text_grey: "#666666",
         sdb: "#00adec",
         sdb_lighter: "#90dbf4",
         sdb_light: "#5cc2e8",
