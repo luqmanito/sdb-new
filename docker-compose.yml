@@ -2,15 +2,27 @@ version: '3'
 
 services:
   nextjs:
-    container_name: nextjsportfolio
+    container_name: nextjs
     build:
       context: ./
-    image: nextjsportfolio
+    image: nextjs
     ports:
-      - '3001:3001'
+      - '3005:3005'
     restart: unless-stopped
     networks:
       - nextjs-network
+
+  webserver:
+    container_name: webserver
+    image: nginx:1.15.12-alpine
+    restart: unless-stopped
+    ports:
+      - 8080:80
+      - 8443:443
+    volumes:
+      - ./config:/etc/nginx/conf.d
+      - /etc/letsencrypt:/etc/letsencrypt:ro
+      - /tmp/acme_challenge:/tmp/acme_challenge
 
 networks:
   nextjs-network:
